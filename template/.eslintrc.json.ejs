@@ -1,0 +1,33 @@
+{
+  "extends": [
+    "standard",<% if (prettier === 'yes') {%>
+    "prettier",
+    "prettier/standard"<% } %><% if (client === 'react') {%>,
+    "plugin:react/recommended"<% } %>
+  ],
+  "plugins": [
+    "import",<% if (prettier === 'yes') {%>
+    "prettier",<% } %>
+    "standard"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2017,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "env": {
+    "node": true,
+    "es6": true,<% if (test === 'jest') {%>
+    "jest": true<% } %>
+  },
+  "rules": {
+    "space-before-function-paren": 0,
+    "new-cap": 0,<% if (prettier === 'yes') {%>
+    "prettier/prettier": 2<% } %>
+  },
+  "globals": {
+    "localStorage": true
+  }
+}
