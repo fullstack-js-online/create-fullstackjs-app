@@ -8,10 +8,6 @@
   },
   "author": "kati frantz <bahdcoder@gmail.com> (github.com/bahdcoder)",
   "license": "MIT",
-  "files": [
-    "saofile.js",
-    "template"
-  ],
   "bin": {
     "create-fullstackjs-app": "./cli.js"
   },
