@@ -1,6 +1,6 @@
 {
   "name": "@fullstackjs/create-fullstackjs-app",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple cli tool for generating fullstack-js-online starter projects",
   "repository": {
     "url": "https://fullstackjs.online/create-fullstackjs-app",
