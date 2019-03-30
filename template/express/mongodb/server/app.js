@@ -10,7 +10,7 @@ import config from '@server/config'
 import v1Router from '@server/routes'
 import webpackConfig from '@/webpack.config'
 
-Mongoose.connect(config.databaseUrl, { useNewUrlParser: true })
+Mongoose.connect(config.databaseUrl[config.environment], { useNewUrlParser: true })
 
 const app = new Express()
 
