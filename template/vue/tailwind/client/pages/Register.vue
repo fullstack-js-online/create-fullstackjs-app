@@ -107,9 +107,10 @@ export default {
 
             this.$store
                 .dispatch(POST_REGISTER, this.model)
-                .then(() => {
+                .then(response => {
                     this.toggleLoading()
 
+                    this.setAuth(response.data.data)
                     this.flash('Succesfully registered.')
 
                     this.$router.push('/')
